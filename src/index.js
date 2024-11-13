@@ -20,7 +20,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: `Bearer YOUR_TOKEN`,
+      authorization: `Bearer ${process.env.REACT_APP_ACCESS_TOKEN}`,
     },
   }
 })
